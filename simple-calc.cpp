@@ -6,14 +6,14 @@ int main() {
     char operation;
     double num1, num2;
     
-    cout << "Калькулятор" << endl;
-    cout << "Напеши первое число: ";
+    cout << "Сalculator" << endl;
+    cout << "Write the first number: ";
     cin >> num1;
     
-    cout << "Введите знак +,-,*,/: ";
+    cout << "Enter the sign +,-,*,/: ";
     cin >> operation;
     
-    cout << "Введите второе число: ";
+    cout << "Enter the second number: ";
     cin >> num2;
     
     switch(operation) {
@@ -30,11 +30,11 @@ int main() {
             if(num2 != 0) {
                 cout << num1 << " / " << num2 << " = " << num1 / num2;
             } else {
-                cout << "Ошибка: деление на ноль!";
+                cout << "You can't divide by zero...";
             }
             break;
         default:
-            cout << "Пиши нормальный знак!";
+            cout << "Write a normal sign!";
     }
     
     return 0;
